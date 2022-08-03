@@ -28,4 +28,13 @@ git_repository(
 )
 ```
 
-See my rules_cpp repository on how to use it from a BUILD file.
+And a BUILD file with:
+```
+load(":rule_def.bzl", "cpp_binary")
+
+cpp_binary(
+    name = "hello-world",
+    srcs = ["hello-world.cpp"],
+)
+```
+Where the cpp_binary is defined to invoke the gcc toolchain with the correct parameters.
