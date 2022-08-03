@@ -28,13 +28,3 @@ git_repository(
 )
 ```
 
-And a BUILD file with:
-```
-load(":rule_def.bzl", "cpp_binary")
-
-cpp_binary(
-    name = "hello-world",
-    srcs = ["hello-world.cpp"],
-)
-```
-Where the cpp_binary is defined to invoke the gcc toolchain with the correct parameters.
