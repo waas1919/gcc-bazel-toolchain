@@ -19,7 +19,7 @@ def _impl(ctx):
     tool_paths = [
         tool_path(
             name = "gcc",
-            path = "/usr/bin/gcc-10",
+            path = "/usr/bin/gcc-11",
         ),
         tool_path(
             name = "ld",
